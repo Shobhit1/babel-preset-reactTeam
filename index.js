@@ -1,7 +1,5 @@
 module.exports = {
-  presets: [
-    require("babel-preset-es2015"),
-    require("babel-preset-react"),
+  plugins: [
     require('babel-plugin-array-includes').default,
 
     require('babel-plugin-syntax-class-properties'),
@@ -11,8 +9,6 @@ module.exports = {
     require('babel-plugin-transform-class-properties'),
     require('babel-plugin-transform-decorators-legacy').default,
     require('babel-plugin-transform-object-assign'),
-    require('babel-plugin-transform-object-rest-spread')
-    require('babel-plugin-transform-remove-console')
-    require('babel-plugin-undeclared-variables-check')
+    require('babel-plugin-transform-object-rest-spread'),
   ]
 };
